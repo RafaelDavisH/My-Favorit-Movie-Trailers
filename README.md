@@ -27,6 +27,8 @@ The `fresh_tomatoes.py` has `open_movies_page()` function that will
 take in the list of movies and generate an HTML file including its content,
 producing a website to showcase my favorite movie trailers.
 
+`fresh_tomatoes.py` has the `HTML` code build with bootstrap, and a block of
+`CSS` customizing the look and feel of the website.
 
 ### Media
 
