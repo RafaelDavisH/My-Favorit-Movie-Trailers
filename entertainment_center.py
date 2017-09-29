@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/env python2.7
 
 import fresh_tomatoes
 import media
@@ -102,12 +102,14 @@ jurassic_park = media.Movie(
 the_lost_world = media.Movie(
     "The Lost World",
     """Four years after the events of the Jurassic Park dinosaurs roaming free
-    in the Isla Nublar. An expedition its set to stop of the capturing of the dinosaurs.""",
+    in the Isla Nublar. An expedition its set to stop of the capturing of the
+    dinosaurs.""",
     "https://goo.gl/yDsNqa",
     "https://youtu.be/RxrvaneULkE"
-)
+    )
 
-# Secret Life of Walter Mitty: movie title, storyline, poster imag and movie trailer
+# Secret Life of Walter Mitty: movie title, storyline, poster imag and movie
+# trailer
 the_secret_life_of_walter_mitty = media.Movie(
     "The Secret Life of Walter Mitty",
     """Walter Mitty is a negative assest manager at Life magazine

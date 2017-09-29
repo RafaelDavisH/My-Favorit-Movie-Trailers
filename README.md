@@ -9,16 +9,27 @@ A simple and dynamic project website that showcase a few of my favorite movie tr
 - Storyline
 - Trailer youtube video.
 
-**You'll be running `entertainment_center.py` script to load the website, but first:**
+## How to run the code
+
+To use this project you must to have [python](https://www.python.org/) installed
+
+* Download the code or clone the repository. links for the raw format of each file are listed below.
+
+ * `fresh_tomatoes.py`
+
+ * `media.py`
+
+ * `entertainment_center.py`
 
 
-### You'll Need:
+* Running `entertainment_center` in the terminal
 
-`fresh_tomatoes.py`
+ * `python entertainment_center.py` or `./entertainment_center.py`
 
-`media.py`
 
-`entertainment_center.py`
+* Running `entertainment_center.py` with IDLE
+
+ * *open* the file in IDLE and select *Run Module* on the *Run* menu.
 
 
 ### Fresh Tomatoes
