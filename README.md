@@ -15,19 +15,19 @@ To use this project you must to have [python](https://www.python.org/) installed
 
 * Download the code or clone the repository. links for the raw format of each file are listed below.
 
- * `fresh_tomatoes.py`
+ * [`fresh_tomatoes.py`](https://raw.githubusercontent.com/RafaelDavisH/My-Favorite-Movie-Trailers/master/fresh_tomatoes.py)
 
- * `media.py`
+ * [`media.py`](https://raw.githubusercontent.com/RafaelDavisH/My-Favorite-Movie-Trailers/master/media.py)
 
- * `entertainment_center.py`
+ * [`entertainment_center.py`](https://github.com/RafaelDavisH/My-Favorite-Movie-Trailers/raw/master/entertainment_center.py)
 
 
-* Running `entertainment_center` in the terminal
+* Running `entertainment_center` in the terminal.
 
  * `python entertainment_center.py` or `./entertainment_center.py`
 
 
-* Running `entertainment_center.py` with IDLE
+* Running `entertainment_center.py` with IDLE.
 
  * *open* the file in IDLE and select *Run Module* on the *Run* menu.
 
