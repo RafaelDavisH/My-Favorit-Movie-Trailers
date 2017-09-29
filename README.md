@@ -9,6 +9,7 @@ A simple and dynamic project website that showcase a few of my favorite movie tr
 - Storyline
 - Trailer youtube video.
 
+
 ## How to run the code
 
 To use this project you must to have [python](https://www.python.org/) installed
@@ -31,6 +32,7 @@ To use this project you must to have [python](https://www.python.org/) installed
 
    * *open* the file in IDLE and select *Run Module* on the *Run* menu.
 
+
 ## Inside Files
 
 ### Fresh Tomatoes
@@ -42,12 +44,14 @@ producing a website to showcase my favorite movie trailers.
 `fresh_tomatoes.py` has the `HTML` code build with bootstrap, and a block of
 `CSS` customizing the look and feel of the website.
 
+
 ### Media
 
 You will find inside `media.py` a class called `Movie()`, which contains the
 `__init__` constructor, four instance variables and an instance method.
 
 *`__int__` constructor*
+
 
 This constructor has five arguments, including `self`, which are:
 
@@ -71,6 +75,7 @@ This constructor has five arguments, including `self`, which are:
 3. `poster_image_url`
 
 4. `trailer_youtube_url`
+
 
 
 *Instance Method*
