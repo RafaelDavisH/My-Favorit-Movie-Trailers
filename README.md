@@ -7,10 +7,9 @@ A simple and dynamic project website that showcase a few of my favorite movie tr
 - Poster image
 - Title
 - Storyline
-- Trailer youtube video. 
+- Trailer youtube video.
 
-**You'll be running `entertainment_center.py` script to load the website,
-but first:**
+**You'll be running `entertainment_center.py` script to load the website, but first:**
 
 
 ### You'll Need:
@@ -24,15 +23,15 @@ but first:**
 
 ### Fresh Tomatoes
 
-The `fresh_tomatoes.py` contains the `open_movies_page()` function that will
+The `fresh_tomatoes.py` has `open_movies_page()` function that will
 take in the list of movies and generate an HTML file including its content,
 producing a website to showcase my favorite movie trailers.
 
 
 ### Media
 
-`media.py` contains class called `Movie()`, which contains the `__init__`
-constructor, four instance variables and an instance method.
+You will find inside `media.py` a class called `Movie()`, which contains the
+`__init__` constructor, four instance variables and an instance method.
 
 *`__int__` constructor*
 
@@ -48,6 +47,7 @@ This constructor has five arguments, including `self`, which are:
 
 5. `trailer_youtube`
 
+
 *Instance Variables:*
 
 1. `title`
@@ -58,10 +58,12 @@ This constructor has five arguments, including `self`, which are:
 
 4. `trailer_youtube_url`
 
+
 *Instance Method*
 
 `show_trailer()` is the method that will show the movie youtube trailer in a
-new tab.
+new tab. The method initiates `webbrowser.open(self.trailer_youtube_url)`.
+
 
 ### Entertainment Center
 
