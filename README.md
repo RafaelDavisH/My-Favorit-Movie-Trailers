@@ -31,6 +31,7 @@ To use this project you must to have [python](https://www.python.org/) installed
 
    * *open* the file in IDLE and select *Run Module* on the *Run* menu.
 
+## Inside Files
 
 ### Fresh Tomatoes
 
