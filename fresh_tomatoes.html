@@ -1,0 +1,204 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>My Favs!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+        p {
+            font-size: 12px;
+            font-style: italic;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">My Favorite Movie Trailers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="5Eyw-Qiwpj0" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Italianjob.jpg" width="220" height="342">
+    <h4>The Italian Job</h4>
+    <p>Is about a team of thieves who plan to steal gold grom a former
+    associate who double-crossed them.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="OubkxGzVuxU" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/PMzJ1P" width="220" height="342">
+    <h4>The Voyage of the Dawn Treader</h4>
+    <p>Three Narnian years after the events of Prince Caspian.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="RYExstiQlLc" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/QSjRQo" width="220" height="342">
+    <h4>Saving Private Ryan</h4>
+    <p>A 1998 American epic war drama film set during the Invasion
+    of Normandy in World War II.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="cD-uQreIwEk" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/Zdbhw4" width="220" height="342">
+    <h4>The Bourne Identity</h4>
+    <p>An amnesiac attempting to discover
+    his true identity amidist a clandestine conspiracy within
+    the Central Intelligence Agency.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Y-HqyyfBbSo" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/uJaHHr" width="220" height="342">
+    <h4>The Bourne Supremacy</h4>
+    <p>Jason focuses in learning more of his past as he is
+    once more enveloped in a conspiracy invoving the CIA and Operation
+    Treadstone.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ZT2ZxjUjSo0" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/W1Ue6C" width="220" height="342">
+    <h4>The Bourne Ultimatum</h4>
+    <p>Jason continues his search for information about his past before he was
+    part of Operation Treadstone and becomes a target of a similar assassin
+    program. </p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="cdtUdEoE-Q4" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/6okU8T" width="220" height="342">
+    <h4>The Bourne Legacy</h4>
+    <p>In The Bourne Legacy, Aaron Cross is a member of a black ops program
+    called Operation Outcome whose subjects are genetically enhanced. He must
+    run for his life.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ay-Xg1oTeAs" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/fwGxHX" width="220" height="342">
+    <h4>The Dark Knight Rises</h4>
+    <p>Eight years after the events of The Dark Knight, merciless
+    revolutionary Bane forces an older Bruce Wayne to resume his
+    role as Batman and save Gotham City from nuclear destruction.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="v71ce1Dqqns" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/ZBDFr2" width="220" height="342">
+    <h4>Jason Bourne</h4>
+    <p>Bourne remains on the run from CIA hit squads as he tries to uncover
+    hidden truths about his father. CIA director Robert Dewey orders the CIA
+    head of cyber-security Heather Lee to hunt him down.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="QWBKEmWWL38" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/jyE4mL" width="220" height="342">
+    <h4>Jurassic Park</h4>
+    <p>Industrialist John Hammond and his bioengineering company, InGen, have
+    created a theme park called Jurassic Park on Isla Nublar, a Costa Rican
+    Island, pupulated with cloned dinosaurs.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="RxrvaneULkE" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/yDsNqa" width="220" height="342">
+    <h4>The Lost World</h4>
+    <p>Four years after the events of the Jurassic Park dinosaurs roaming free
+    in the Isla Nublar. An expedition its set to stop of the capturing of the
+    dinosaurs.</p>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="eoILTydXrTY" data-toggle="modal" data-target="#trailer">
+    <img src="https://goo.gl/MiWNye" width="220" height="342">
+    <h4>The Secret Life of Walter Mitty</h4>
+    <p>Walter Mitty is a negative assest manager at Life magazine
+    who daydreams of adventures.</p>
+</div>
+
+    </div>
+  </body>
+</html>
